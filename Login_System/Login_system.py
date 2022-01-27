@@ -3,13 +3,11 @@ from tkinter import *
 import tkinter.messagebox as tkm
 w = Tk()
 v = StringVar()
-#So use two parameters in a function need use tkinter not importing all.
 def Click_button(User = str, Pass_ = str):
     User = username.get()
     Pass_ = password.get()
     with open('user.json', 'r') as f_:
         d = json.load(f_)
-        #The value in a key is atribuitted of this case.
     d[User] = Pass_
     while check_userwithpassword(User, Pass_):
         w.destroy()
