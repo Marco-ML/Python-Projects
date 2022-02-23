@@ -162,7 +162,6 @@ def check_userwithpassword(Name_2, Pass_2):
     with open('user.json', 'r') as f_:
         d_ = json.load(f_)
     if Name_2 in d_:
-        #If d = {Name_2: Pass_2} -> return True.
         if d_[Name_2] == Pass_2:
             return True
         else:
