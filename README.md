@@ -4,7 +4,7 @@
 
 In this system it is possible to register new users in a json file with associated username and password, it is also possible to search for registered users.
 
-![image](https://user-images.githubusercontent.com/76064619/151447107-a0d0dfde-e28b-4e85-ad5c-38360a114d5e.png) ![image](https://user-images.githubusercontent.com/76064619/155371113-5130d383-550f-474b-a5fb-1687bbd050d8.png)
+![image](https://user-images.githubusercontent.com/76064619/151447107-a0d0dfde-e28b-4e85-ad5c-38360a114d5e.png)
 
 
 
