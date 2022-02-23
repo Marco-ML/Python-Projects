@@ -170,7 +170,7 @@ def sign_up():
     Pass.place(x = 100, y = 40)
     b_1 = Button(w, width = 5, text = "Sign up", command = sign_up,state = DISABLED, disabledforeground = 'red' )
     b_1.place(x = 300,y = 70)
-    condition_pass = Label(w_1, text = 'Password must have at least: \n Eight characters, One uppper letter, One lower letter, One special character.', fg = 'red')
+    condition_pass = Label(w_1, text = 'Password must have at least: \n eight characters, one uppper letter, one lower letter and one special character.', fg = 'red')
     condition_pass.place(x = 10, y = 60)
     w_1.mainloop()
 
