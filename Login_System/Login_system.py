@@ -20,7 +20,7 @@ def Click_button(User = str, Pass_ = str):
         break
         
     if not check_userwithpassword(User, Pass_):
-        warning_3 = tkm.showwarning('User not exist.','This account not exist, please create in "sign up".')
+        warning_3 = tkm.showwarning('User not exist.','This account not exist, please create one in "sign up".')
 
 def remember_():
     global d_3, a ,b, User_v, Pass_v
