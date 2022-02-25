@@ -134,7 +134,7 @@ def confirm_register(User_new = False):
                     pass
         
             if not low_ == True:
-                warning_3 = tkm.showwarning('Password wrong.', 'Please key a password with a a lower letter.')
+                warning_3 = tkm.showwarning('Password wrong.', 'Please key a password with a lower letter.')
                 not_r = True
         
         if not_r == False:
