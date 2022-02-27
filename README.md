@@ -10,5 +10,5 @@ In this system it is possible to register new users in a json file with associat
 
 Game utilized in the event "Rethinking Education".
 
-![image](https://user-images.githubusercontent.com/76064619/155894561-fb18e26a-04ba-45d3-b6ce-22e7435850cb.png)
+![image](https://user-images.githubusercontent.com/76064619/155894588-f5352b56-6a70-4052-9868-c292bd3c0800.png)
 
