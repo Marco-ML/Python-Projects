@@ -13,48 +13,49 @@ pygame.init()
 def enemy_position_f(p):
     
     if enemy_position_y[p] > 300:
-        enemy_position_y[p] = aleatorio()
+        enemy_position_y[p] = random_()
     enemy_position_y[p] = enemy_position_y[p] + 0.5
 
 
 def hit(y, v):
-    enemy_position_y[y] = aleatorio()
+    enemy_position_y[y] = random_()
     v = v - 1000
     return enemy_position_y[y], v
 
 def show_(v):
-    fonte = pygame.font.SysFont('Comic Sans MS', 15)
+    font = pygame.font.SysFont('Comic Sans MS', 15)
+    
     if c == True:
-        fonte = pygame.font.SysFont('Comic Sans MS', 20)
-        texto_inicio = 'Press SPACE to start.'
-        texto_menu = fonte.render(texto_inicio, True, (255, 255, 255))
-        window_size.blit(texto_menu, [10, 10])
-        fonte = pygame.font.SysFont('Comic Sans MS', 15)
+        font = pygame.font.SysFont('Comic Sans MS', 20)
+        initial_text = 'Press SPACE to start.'
+        start_text = font.render(initial_text, True, (255, 255, 255))
+        window_size.blit(start_text, [10, 10])
+        font = pygame.font.SysFont('Comic Sans MS', 15)
         with open('score.json', 'r') as f_:
             d = json.load(f_)
-        valores = list(d.values())
-        record = f'The biggest score is: {max(valores)}'
-        texto_record = fonte.render(record, True, (0, 255, 0))
-        window_size.blit(texto_record, [40, 100])
+        values = list(d.values())
+        record = f'The biggest score is: {max(values)}'
+        record_text = font.render(record, True, (0, 255, 0))
+        window_size.blit(record_text, [40, 100])
         
     else:
 
         if v >= 0:
-            texto_ponto = 'Score: ' + str(score_v)
-            texto_imagem = fonte.render(texto_ponto, True, (0, 255, 0))
-            window_size.blit(texto_imagem, [10, 10])
+            score_text = 'Score: ' + str(score_v)
+            image_text = font.render(score_text, True, (0, 255, 0))
+            window_size.blit(image_text, [10, 10])
 
         elif v < 0:
-            texto_ponto = 'GAME OVER!'
-            texto_imagem = fonte.render(texto_ponto, True, (255, 0, 0))
-            window_size.blit(texto_imagem, [10, 10])
+            score_text = 'GAME OVER!'
+            image_text = font.render(score_text, True, (255, 0, 0))
+            window_size.blit(image_text, [10, 10])
 
-def aleatorio():
+def random_():
     return -1*random.randint(100, 500)
             
 life = True
 ally_x = 99.5
-enemy_position_y = [aleatorio(), aleatorio(), aleatorio()]
+enemy_position_y = [random_(), random_(), random_()]
 score_v = 0
 c = True
 l = 0
