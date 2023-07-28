@@ -12,3 +12,8 @@ Game utilized in the event "Rethinking Education".
 
 ![image](https://user-images.githubusercontent.com/76064619/155894588-f5352b56-6a70-4052-9868-c292bd3c0800.png)
 
+- Hangman Game
+
+Game developed as a final project for the computational algorithms course at the university.
+
+![Hangman screenshot](https://github.com/Marco-ML/Python-Projects/assets/76064619/3391509f-bd05-415a-a2b8-8d084ce270b2)
